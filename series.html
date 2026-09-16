@@ -1,17 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <title>Cinerate - Séries</title>
-</head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
 
+        table {
+            border-collapse: collapse;
+        }
+
+        .topo {
+            width: 100%;
+            background-color: #000;
+            padding: 10px;
+        }
+
+        .logo {
+            height: 60px;
+            vertical-align: middle;
+        }
+
+        .nome {
+            font-size: 28px;
+            font-weight: bold;
+            color: #5b0202;
+            padding-left: 15px;
+            vertical-align: middle;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #5b0202;
+        }
+
+        .series {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .series h2 {
+            color: #5b0202;
+            margin-bottom: 25px;
+        }
+
+        .serie {
+            display: inline-block;
+            margin: 15px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .serie img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #555;
+        }
+
+        .serie p {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        .rodape {
+            background-color: #000;
+            padding: 25px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .rodape a {
+            color: #5b0202;
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
 
-    <h1>SÉRIES</h1>
+    <table class="topo" width="100%">
+        <tr>
+            <td width="80">
+                <img src="" alt="Logo Cinerate" class="logo">
+            </td>
 
-    <p>Aqui estarão todas as séries do Cinerate!</p>
+            <td class="nome">
+                Cinerate
+            </td>
+
+            <td class="menu" align="right">
+                <a href="index.html">Início</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="series.html">Séries</a>
+                <a href="lancamentos.html">Lançamentos</a>
+            </td>
+        </tr>
+    </table>
+
+
+    <table class="series" width="100%">
+        <tr>
+            <td>
+
+                <h2>SÉRIES EM DESTAQUE</h2>
+
+                <table align="center">
+                    <tr>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/1M876KPjulVwppEpldhdc8n3G7.jpg" alt="Stranger Things">
+                            <p><strong>Stranger Things</strong></p>
+                        </td>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/5qU4n6X6X7X7X7X7X7X7X7X7.jpg" alt="Wandinha">
+                            <p><strong>Wandinha</strong></p>
+                        </td>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/8Zt6mWEReuy4Of61Lnj5Xj704m8.jpg" alt="The Last of Us">
+                            <p><strong>The Last of Us</strong></p>
+                        </td>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/9Gtg2DzBQM5T6W2L8g6L8K7n3m.jpg" alt="Round 6">
+                            <p><strong>Round 6</strong></p>
+                        </td>
+
+                    </tr>
+                </table>
+
+
+                <h2>SÉRIES POPULARES</h2>
+
+                <table align="center">
+                    <tr>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/7X7X7X7X7X7X7X7X7X7X7X7X7.jpg" alt="The Boys">
+                            <p><strong>The Boys</strong></p>
+                        </td>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/6X6X6X6X6X6X6X6X6X6X6X6X6.jpg" alt="The Walking Dead">
+                            <p><strong>The Walking Dead</strong></p>
+                        </td>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/4X4X4X4X4X4X4X4X4X4X4X4X4.jpg" alt="Breaking Bad">
+                            <p><strong>Breaking Bad</strong></p>
+                        </td>
+
+                        <td class="serie">
+                            <img src="https://image.tmdb.org/t/p/original/2X2X2X2X2X2X2X2X2X2X2X2X2.jpg" alt="The Office">
+                            <p><strong>The Office</strong></p>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+
+    <table class="rodape" width="100%">
+        <tr>
+            <td>
+
+                <p><strong>Cinerate Cinema</strong></p>
+
+                <p>Localização: Shopping Plaza Campos Gerais, Rua Visconde de Taunay, 2023. Ponta Grossa, PR.</p>
+
+                <p>Telefone: (12) 3456-7890</p>
+
+                <p>WhatsApp: (12) 3456-7890</p>
+
+                <p>
+                    E-mail:
+                    <a href="mailto:contato@cinerate.com.br">
+                        contato@cinerate.com.br
+                    </a>
+                </p>
+
+                <p>Horário de funcionamento: Todos os dias das 12h às 00h</p>
+
+                <p style="margin-top: 15px; font-size: 13px; color: #888;">
+                    © 2026 Cinerate. Todos os direitos reservados.
+                </p>
+
+            </td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
