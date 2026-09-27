@@ -1,94 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-<meta charset="UTF-8">
-<title>Cinerate - Sobre</title>
+    <meta charset="UTF-8">
+    <title>Cinerate - Sobre</title>
 
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #1a1a1a;
-color: white;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
 
-.topo {
-background-color: black;
-padding: 10px;
-}
+        table {
+            border-collapse: collapse;
+        }
 
-.logo {
-height: 60px;
-}
+        .topo {
+            width: 100%;
+            background-color: #000;
+            padding: 10px;
+        }
 
-.nome {
-font-size: 28px;
-font-weight: bold;
-}
+        .logo {
+            height: 60px;
+            vertical-align: middle;
+        }
 
-a {
-color: white;
-text-decoration: none;
-margin-right: 20px;
-}
+        .nome {
+            font-size: 28px;
+            font-weight: bold;
+            color: #5b0202;
+            padding-left: 15px;
+            vertical-align: middle;
+        }
 
-a:hover {
-color: #5b0202;
-}
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-h1 {
-color: #b30000;
-text-align: center;
-}
+        .menu a:hover {
+            color: #5b0202;
+        }
 
-p {
-font-size: 18px;
-line-height: 1.6;
-text-align: center;
-}
-</style>
+        .sobre {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .sobre h1 {
+            color: #5b0202;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .sobre h2 {
+            color: #5b0202;
+            margin-top: 30px;
+        }
+
+        .sobre p {
+            color: #ddd;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .informacoes {
+            width: 80%;
+            margin: 30px auto;
+            background-color: #111;
+            border: 1px solid #333;
+        }
+
+        .informacoes td {
+            padding: 20px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .informacoes h3 {
+            color: #5b0202;
+            font-size: 20px;
+        }
+
+        .rodape {
+            background-color: #000;
+            padding: 25px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-top: 40px;
+        }
+
+        .rodape a {
+            color: #5b0202;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-<table width="100%" class="topo">
-<tr>
-<td>
-<img src="logo.png" class="logo">
-</td>
+    <table class="topo" width="100%">
+        <tr>
+            <td width="80">
+                <img src="LINK_DA_LOGO" alt="Logo Cinerate" class="logo">
+            </td>
 
-<td>
-<span class="nome">Cinerate</span>
-</td>
+            <td class="nome">
+                Cinerate
+            </td>
 
-<td align="right">
-<a href="index.html">Início</a>
-<a href="filmes.html">Filmes</a>
-<a href="series.html">Séries</a>
-<a href="lancamentos.html">Lançamentos</a>
-<a href="sobre.html">Sobre</a>
-</td>
-</tr>
-</table>
+            <td class="menu" align="right">
+                <a href="index.html">Início</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="series.html">Séries</a>
+                <a href="lancamentos.html">Lançamentos</a>
+                <a href="sobre.html">Sobre</a>
+            </td>
+        </tr>
+    </table>
 
-<h1>Sobre o Cinerate</h1>
+    <table class="sobre" width="100%">
+        <tr>
+            <td>
+                <h1>SOBRE O CINERATE</h1>
 
-<p>
-O Cinerate é um site criado para apresentar informações
-sobre filmes, séries e lançamentos do mundo do cinema.
-</p>
+                <p>
+                    O Cinerate é um site criado para os apaixonados por cinema
+                    e entretenimento. Aqui você pode encontrar informações
+                    sobre filmes, séries e os principais lançamentos.
+                </p>
 
-<p>
-Aqui você pode conhecer diferentes títulos e descobrir
-novas opções para assistir.
-</p>
+                <p>
+                    Nosso objetivo é reunir tudo em um só lugar, facilitando
+                    a busca por novos filmes e séries para assistir.
+                </p>
 
-<p>
-O objetivo do Cinerate é reunir conteúdos sobre cinema
-de forma simples, organizada e fácil de navegar.
-</p>
+                <h2>NOSSA PROPOSTA</h2>
+
+                <p>
+                    O Cinerate foi desenvolvido para apresentar conteúdos de
+                    forma simples, organizada e fácil de navegar.
+                </p>
+
+                <p>
+                    Através das diferentes páginas do site, você pode conhecer
+                    filmes, descobrir séries e acompanhar os lançamentos
+                    que chegam aos cinemas.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="informacoes" align="center">
+        <tr>
+            <td>
+                <h3>FILMES</h3>
+
+                <p>
+                    Encontre diferentes filmes e conheça suas informações,
+                    gêneros e histórias.
+                </p>
+            </td>
+
+            <td>
+                <h3>SÉRIES</h3>
+
+                <p>
+                    Descubra séries de diferentes gêneros e encontre novas
+                    opções para assistir.
+                </p>
+            </td>
+
+            <td>
+                <h3>LANÇAMENTOS</h3>
+
+                <p>
+                    Acompanhe filmes que estão chegando aos cinemas e fique
+                    por dentro das novidades.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="sobre" width="100%">
+        <tr>
+            <td>
+                <h2>ENTRE EM CONTATO</h2>
+
+                <p>
+                    Para dúvidas, sugestões ou informações, entre em contato
+                    com a equipe do Cinerate.
+                </p>
+
+                <p>
+                    E-mail:
+                    <a href="mailto:contato@cinerate.com.br"
+                       style="color: #5b0202;">
+                        contato@cinerate.com.br
+                    </a>
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="rodape" width="100%">
+        <tr>
+            <td>
+                <p><strong>Cinerate Cinema</strong></p>
+
+                <p>
+                    Localização: Shopping Plaza Campos Gerais,
+                    Rua Visconde de Taunay, 2023. Ponta Grossa, PR.
+                </p>
+
+                <p>Telefone: (12) 3456-7890</p>
+
+                <p>WhatsApp: (12) 3456-7890</p>
+
+                <p>
+                    E-mail:
+                    <a href="mailto:contato@cinerate.com.br">
+                        contato@cinerate.com.br
+                    </a>
+                </p>
+
+                <p>
+                    Horário de funcionamento:
+                    Todos os dias das 12h às 00h
+                </p>
+
+                <p style="margin-top: 15px; font-size: 13px; color: #888;">
+                    © 2026 Cinerate. Todos os direitos reservados.
+                </p>
+            </td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
