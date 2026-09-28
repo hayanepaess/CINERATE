@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinerate - Filmes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .topo {
+            width: 100%;
+            background-color: #000;
+            padding: 10px;
+        }
+
+        .logo {
+            height: 60px;
+            vertical-align: middle;
+        }
+
+        .nome {
+            font-size: 28px;
+            font-weight: bold;
+            color: #5b0202;
+            padding-left: 15px;
+            vertical-align: middle;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #5b0202;
+        }
+
+        .titulo {
+            text-align: center;
+            padding: 35px 20px 20px;
+        }
+
+        .titulo h1 {
+            color: #5b0202;
+            font-size: 32px;
+        }
+
+        .titulo p {
+            color: #ccc;
+            font-size: 17px;
+        }
+
+        .catalogo {
+            width: 90%;
+            margin: auto;
+        }
+
+        .filme {
+            width: 25%;
+            padding: 20px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .filme img {
+            width: 260px;
+            height: 385px;
+            object-fit: cover;
+            border: 2px solid#5b0202;
+        }
+
+        .filme h2 {
+            color: #5b0202;
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .filme p {
+            color: #ddd;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        .informacoes {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .rodape {
+            background-color: #000;
+            padding: 25px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-top: 40px;
+        }
+
+        .rodape a {
+            color: #5b0202;
+            text-decoration: none;
+        }
+
+        .catalogo img {
+            width: 260px !important;
+            height: 385px !important;
+            object-fit: cover;
+           }
+    </style>
+</head>
+
+<body>
+    <table class="topo" width="100%">
+        <tr>
+            <td width="80">
+                <img src="logo.png.jpg" alt="Logo Cinerate" class="logo">
+            </td>
+
+            <td class="nome">
+                Cinerate
+            </td>
+
+            <td class="menu" align="right">
+                <a href="index.html">Início</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="series.html">Séries</a>
+                <a href="lancamentos.html">Lançamentos</a>
+                <a href="sobre.html">Sobre</a>
+            </td>
+        </tr>
+    </table>
+
+    <header class="titulo">
+        <h1>FILMES</h1>
+
+        <p>
+            Confira informações sobre alguns dos filmes disponíveis no Cinerate.
+        </p>
+    </header>
+
+    <table class="catalogo" align="center">
+        <tr>
+            <td class="filme">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFReOoY67z0SBarF-fNcNESUoVU9qDCDxWFZPoEtQ-Fg&s=10" alt="Imagem do filme">
+
+                <h2>Michael</h2>
+
+                <p class="informacoes">
+                    Gênero: Drama / Musical
+                </p>
+
+                <p>
+                    Duração: 2h 7min
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 12 anos
+                </p>
+            </td>
+
+            <td class="filme">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj37DFLOgsBYIjz5xLaQ1BrSyNebZEovvH1fyNA0vkTA&s" alt="Imagem do filme">
+
+                <h2>Como Mágica</h2>
+
+                <p class="informacoes">
+                    Gênero: Aventura / Comédia
+                </p>
+
+                <p>
+                    Duração: 1h 38min
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 10 anos
+                </p>
+            </td>
+
+            <td class="filme">
+                <img src="https://br.web.img3.acsta.net/c_310_420/img/00/51/0051bc7965f851f46f856d4119741487.jpg" alt="Imagem do filme">
+
+                <h2>Devoradores de Estrelas</h2>
+
+                <p class="informacoes">
+                    Gênero: Ficção Científica / Ação
+                </p>
+
+                <p>
+                    Duração: 2h 37min
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 14 anos
+                </p>
+            </td>
+
+            <td class="filme">
+                <img src="https://br.web.img3.acsta.net/c_310_420/img/76/a6/76a6a71a49a8c249906f7427c82436c2.jpg" alt="Imagem do filme">
+
+                <h2>Obsessão</h2>
+
+                <p class="informacoes">
+                    Gênero: Terror
+                </p>
+
+                <p>
+                   Duração: 1h 49min
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 18 anos
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="filme">
+                <img src="https://br.web.img3.acsta.net/c_310_420/img/37/58/37581b70871099a7b679a7fa12f33150.jpg" alt="Imagem do filme">
+
+                <h2>Máquina de Guerra</h2>
+
+                <p class="informacoes">
+                    Gênero: Suspense 
+                </p>
+
+                <p>
+                    Duração: 1h 46min
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 16 anos
+                </p>
+            </td>
+
+            <td class="filme">
+                <img src="https://br.web.img3.acsta.net/c_310_420/img/5b/ea/5bea1aeac3323aeaaf82449a34fafbbf.jpg" alt="Imagem do filme">
+
+                <h2>Super Mário Galaxy: O Filme</h2>
+
+                <p class="informacoes">
+                    Gênero: Fantasia / Animação
+                </p>
+
+                <p>
+                    Duração: 1h 39min
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 6 anos
+                </p>
+            </td>
+
+            <td class="filme">
+                <img src="https://br.web.img3.acsta.net/c_310_420/img/ec/fb/ecfb3f4dfbeb1e0145b0840fc3a2c663.png" alt="Imagem do filme">
+
+                <h2>Mortal Kombat II</h2>
+
+                <p class="informacoes">
+                    Gênero: Aventura / Ação
+                </p>
+
+                <p>
+                    Duração: 1h 56min 
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 18 anos
+                </p>
+            </td>
+
+            <td class="filme">
+                <img src="https://br.web.img3.acsta.net/c_310_420/img/dd/93/dd9373650393807f622fffcea10be073.png" alt="Imagem do filme">
+
+                <h2>O Diabo Veste Prada 2</h2>
+
+                <p class="informacoes">
+                    Gênero: Comédia / Drama
+                </p>
+
+                <p>
+                    Duração: 1h 59min
+                </p>
+
+                <p class="informacoes">
+                    Classificação: 12 anos
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="rodape" width="100%">
+        <tr>
+            <td>
+                <p><strong>Cinerate Cinema</strong></p>
+
+                <p>
+                    Localização: Shopping Plaza Campos Gerais,
+                    Rua Visconde de Taunay, 2023. Ponta Grossa, PR.
+                </p>
+
+                <p>Telefone: (12) 3456-7890</p>
+
+                <p>WhatsApp: (12) 3456-7890</p>
+
+                <p>
+                    E-mail:
+                    <a href="mailto:contato@cinerate.com.br">
+                        contato@cinerate.com.br
+                    </a>
+                </p>
+
+                <p>
+                    Horário de funcionamento:
+                    Todos os dias das 12h às 00h
+                </p>
+
+                <p style="margin-top: 15px; font-size: 13px; color: #888;">
+                    © 2026 Cinerate. Todos os direitos reservados.
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
