@@ -1,185 +1,239 @@
-<html lang="pt-BR">
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Cinema</title>
+    <title>Cinerate - Contato</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            min-height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), #111;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
         }
 
-        .container {
+        table {
+            border-collapse: collapse;
+        }
+
+        .topo {
             width: 100%;
-            max-width: 500px;
-            background: #1b1b1b;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+            background-color: #000;
+            padding: 10px;
         }
 
         .logo {
-            width: 130px;
-            height: 130px;
-            margin: 0 auto 20px;
-            border: 2px dashed #e50914;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #aaa;
-            text-align: center;
-            overflow: hidden;
+            height: 60px;
+            vertical-align: middle;
         }
 
-        .logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+        .nome {
+            font-size: 28px;
+            font-weight: bold;
+            color: #5b0202;
+            padding-left: 15px;
+            vertical-align: middle;
         }
 
-        h1 {
-            text-align: center;
-            color: #e50914;
-            margin-bottom: 10px;
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
-        .descricao {
+        .menu a:hover {
+            color: #5b0202;
+        }
+
+        .contato {
+            width: 600px;
+            max-width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #2a2a2a;
+            border: 2px solid #5b0202;
+            text-align: left;
+        }
+
+        .contato h2 {
+            color: #5b0202;
             text-align: center;
-            color: #bbb;
             margin-bottom: 25px;
         }
 
-        .campo {
-            margin-bottom: 18px;
-        }
-
-        label {
+        .contato label {
             display: block;
-            margin-bottom: 7px;
-            color: #fff;
+            margin-top: 15px;
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
-        input,
-        textarea {
+        .contato input,
+        .contato textarea {
             width: 100%;
-            padding: 13px;
-            border: 1px solid #444;
-            border-radius: 8px;
-            background: #292929;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #1a1a1a;
             color: white;
-            outline: none;
+            border: 1px solid #555;
+            font-family: Arial, sans-serif;
             font-size: 15px;
         }
 
-        input:focus,
-        textarea:focus {
-            border-color: #e50914;
-            box-shadow: 0 0 5px rgba(229, 9, 20, 0.5);
-        }
-
-        textarea {
-            height: 130px;
+        .contato textarea {
+            height: 150px;
             resize: vertical;
         }
 
-        button {
-            width: 100%;
-            padding: 14px;
-            background: #e50914;
+        .contato button {
+            display: block;
+            margin: 25px auto 0;
+            padding: 12px 30px;
+            background-color: #5b0202;
             color: white;
             border: none;
-            border-radius: 8px;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
         }
 
-        button:hover {
-            background: #b20710;
-            transform: scale(1.02);
+        .contato button:hover {
+            background-color: #800000;
+        }
+
+        #mensagem {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #00cc66;
+            font-weight: bold;
         }
 
         .rodape {
+            background-color: #000;
+            padding: 25px;
             text-align: center;
-            color: #777;
-            font-size: 13px;
-            margin-top: 20px;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
-        @media (max-width: 600px) {
-            .container {
-                padding: 25px 20px;
-            }
-
-            .logo {
-                width: 110px;
-                height: 110px;
-            }
+        .rodape a {
+            color: #5b0202;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- CABEÇALHO -->
+    <table class="topo" width="100%">
+        <tr>
+            <td width="80">
+                <img src="logo.png.jpg" alt="Logo Cinerate" class="logo">
+            </td>
 
-        <div class="logo">
-            <img src="logo.png.jpg0," alt="Logo do cinema">
-        </div>
+            <td class="nome">
+                Cinerate
+            </td>
 
-        <h1>Entre em Contato</h1>
+            <td class="menu" align="right">
+                <a href="index.html">Início</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="series.html">Séries</a>
+                <a href="lancamentos.html">Lançamentos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </td>
+        </tr>
+    </table>
 
-        <p class="descricao">
-            Fale com nossa equipe do Cinerate.
-        </p>
 
-        <form>
+    <!-- FORMULÁRIO -->
+    <div class="contato">
 
-            <div class="campo">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-            </div>
+        <h2>Entre em Contato</h2>
 
-            <div class="campo">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-            </div>
+        <form onsubmit="enviarFormulario(event)">
 
-            <div class="campo">
-                <label for="assunto">Assunto</label>
-                <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto" required>
-            </div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
 
-            <div class="campo">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-            </div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" required>
+
+            <label for="mensagemTexto">Mensagem:</label>
+            <textarea id="mensagemTexto" required></textarea>
 
             <button type="submit">Enviar mensagem</button>
 
         </form>
 
-        <p class="rodape">
-            © 2026 Cinema — Todos os direitos reservados.
+        <p id="mensagem">
+            Mensagem enviada com sucesso!
         </p>
 
     </div>
 
+
+    <!-- RODAPÉ -->
+    <table class="rodape" width="100%">
+        <tr>
+            <td>
+
+                <p><strong>Cinerate Cinema</strong></p>
+
+                <p>
+                    Localização: Shopping Plaza Campos Gerais,
+                    Rua Visconde de Taunay, 2023. Ponta Grossa, PR.
+                </p>
+
+                <p>Telefone: (12) 3456-7890</p>
+
+                <p>WhatsApp: (12) 3456-7890</p>
+
+                <p>
+                    E-mail:
+                    <a href="mailto:contato@cinerate.com.br">
+                        contato@cinerate.com.br
+                    </a>
+                </p>
+
+                <p>Horário de funcionamento: Todos os dias das 12h às 00h</p>
+
+                <p style="margin-top: 15px; font-size: 13px; color: #888;">
+                    © 2026 Cinerate. Todos os direitos reservados.
+                </p>
+
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- SIMULAÇÃO DO ENVIO -->
+    <script>
+
+        function enviarFormulario(event) {
+
+            event.preventDefault();
+
+            document.getElementById("mensagem").style.display = "block";
+
+            document.getElementById("nome").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("assunto").value = "";
+            document.getElementById("mensagemTexto").value = "";
+
+        }
+
+    </script>
+
 </body>
 </html>
+```
